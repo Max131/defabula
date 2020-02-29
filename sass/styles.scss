@@ -1,0 +1,56 @@
+@utf "charset-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+@import url('https://fonts.googleapis.com/css?family=Nothing+you+could-do');
+
+// Set your brand colors
+//$purple: #8A4D76;
+//$pink: #FA7C91;
+//$brown: #757763;
+//$beige-light: #D0D1CD;
+//$beige-lighter: #EFF0EB;
+
+// $myPrimary: #F2A950;
+// $myLink: #F2C84B;
+// $myGrey-dark: #F2A950;
+// $myGrey-light: #F2C84B;
+// $myBodybackground: #FDFFED;
+
+// Update Bulma's global variables
+//$family-sans-serif: "Neucha", sans-serif;
+$family-sans-serif: "Neucha", sans-serif;
+$family-secondary: "Nothing you could do";
+//$grey-dark: $brown;
+//$grey-dark: $myGrey-dark;
+//$grey-light: $beige-light;
+//$grey-light: $myGrey-light;
+//$primary: $purple;
+//$primary: $myPrimary;
+//$link: $pink;
+//$link: $myLink;
+//$widescreen-enabled: false;
+//$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+//$body-background-color: $beige-lighter;
+//$body-background-color: $myBodybackground;
+//$control-border-width: 2px;
+//$input-border-color: transparent;
+//$input-shadow: none;
+//$radius-rounded: 10px 180px / 200px 10px;
+$radius-rounded: 100% 50% / 50% 100%;
+//$radius-small: $radius-rounded;
+//$dropdown-content-radius: $radius-rounded;
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/bulma.sass";
+
