@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>De Fábula - Marionetas, Cuentos y Aventuras.</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
@@ -77,6 +78,109 @@
         <h2 class="title is-2 has-text-centered is-family-secondary">Cuentos de fábula</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat vitae dicta numquam fugiat perspiciatis aliquam laborum distinctio, ipsum impedit. Officia soluta beatae voluptate ratione sit, quae blanditiis quidem perspiciatis culpa!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio, autem, quisquam corporis culpa architecto deleniti facilis qui perspiciatis voluptatum minus aliquid fuga recusandae molestias unde ipsum? Quae, quia repudiandae.Doloribus maxime officia quo quasi totam neque minus inventore pariatur magnam, dolore at sunt, vel reiciendis voluptatem cumque expedita labore quod iure. Error consequuntur id, dolore minima facilis illo neque.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div id="slider1">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-covered">
+              <img src="images/defabula15.jpeg"
+                alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Mon titre 1
+            </div>
+            <div class="item__description">
+              Ici une petite description pour tester le slider
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-covered">
+              <img src="images/defabula03.jpeg"
+                alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Mon titre 2
+            </div>
+            <div class="item__description">
+              Ici une petite description pour tester le slider
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-covered">
+              <img src="images/defabula12.jpeg" alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Mon titre 3
+            </div>
+            <div class="item__description">
+              Ici une petite description pour tester le slider
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-covered">
+              <img src="images/defabula09.jpeg"
+                alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Mon titre 4
+            </div>
+            <div class="item__description">
+              Ici une petite description pour tester le slider
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-covered">
+              <img src="images/defabula13.jpeg" alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Mon titre 5
+            </div>
+            <div class="item__description">
+              Ici une petite description pour tester le slider
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-covered">
+              <img src="images/defabula14.jpeg" alt="">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="item__title">
+              Mon titre 6
+            </div>
+            <div class="item__description">
+              Ici une petite description pour tester le slider
+            </div>
+          </div>
+        </div>
+    
       </div>
     </section>
     <section class="section">
@@ -165,13 +269,12 @@
     <footer class="footer has-background-warning">
       <div class="content has-text-centered">
         <p>
-          <strong>De Fábula</strong> por <a href="https://jgthms.com">John Dow</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          <strong>De Fábula 2020&copy;</strong> por <a href="https://thinkonline.xyz">Think Online!</a>. Desarrollado con <a href="https://bulma.io">Bulma</a>
         </p>
       </div>
     </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -199,6 +302,15 @@ if ($navbarBurgers.length > 0) {
 
 });
   AOS.init();
+
+  bulmaCarousel.attach('#slider1', {
+    slidesToScroll: 1,
+    slidesToShow: 4,
+    navigationKeys: true,
+    loop: true,
+    infinite: true,
+    autoplay: true
+  });
   </script>
   </body>
 </html>
