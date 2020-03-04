@@ -7,11 +7,10 @@
     <title>De Fábula - Marionetas, Cuentos y Aventuras.</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
       html{scroll-behavior: smooth;}
-      .hero{
+      .parallax{
           background-image: 
           radial-gradient(ellipse at center, transparent, black),
           url('images/defabula02.jpeg')!important;
@@ -34,7 +33,7 @@
     </style>
   </head>
   <body>
-    <section class="hero is-dark is-bold is-fullheight">
+    <section class="hero is-dark is-bold is-fullheight parallax">
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
@@ -57,7 +56,7 @@
         </nav>
       </div>
       <!-- Hero content: will be in the middle -->
-      <div class="hero-body" data-aos="fade-up">
+      <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title is-italic is-2 is-size-3-mobile is-family-secondary has-text-weight-light">
             De Fábula
@@ -74,19 +73,21 @@
       </div>
     </section>
     <section class="section">
-      <div class="content" data-aos="zoom-in">
+      <div class="content">
         <h2 class="title is-2 has-text-centered is-family-secondary">Cuentos de fábula</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat vitae dicta numquam fugiat perspiciatis aliquam laborum distinctio, ipsum impedit. Officia soluta beatae voluptate ratione sit, quae blanditiis quidem perspiciatis culpa!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio, autem, quisquam corporis culpa architecto deleniti facilis qui perspiciatis voluptatum minus aliquid fuga recusandae molestias unde ipsum? Quae, quia repudiandae.Doloribus maxime officia quo quasi totam neque minus inventore pariatur magnam, dolore at sunt, vel reiciendis voluptatem cumque expedita labore quod iure. Error consequuntur id, dolore minima facilis illo neque.</p>
       </div>
     </section>
     <section class="section">
-      <div id="slider1">
+
+      <!-- Carousel start -->
+      <div class="slider">
+
         <div class="card">
           <div class="card-image">
-            <figure class="image is-covered">
-              <img src="images/defabula15.jpeg"
-                alt="">
+            <figure class="image">
+              <img src="images/defabula15.jpeg" alt="">
             </figure>
           </div>
           <div class="card-content">
@@ -101,9 +102,8 @@
     
         <div class="card">
           <div class="card-image">
-            <figure class="image is-covered">
-              <img src="images/defabula03.jpeg"
-                alt="">
+            <figure class="image">
+              <img src="images/defabula03.jpeg" alt="">
             </figure>
           </div>
           <div class="card-content">
@@ -118,7 +118,7 @@
     
         <div class="card">
           <div class="card-image">
-            <figure class="image is-covered">
+            <figure class="image">
               <img src="images/defabula12.jpeg" alt="">
             </figure>
           </div>
@@ -134,9 +134,8 @@
     
         <div class="card">
           <div class="card-image">
-            <figure class="image is-covered">
-              <img src="images/defabula09.jpeg"
-                alt="">
+            <figure class="image">
+              <img src="images/defabula09.jpeg" alt="">
             </figure>
           </div>
           <div class="card-content">
@@ -151,7 +150,7 @@
     
         <div class="card">
           <div class="card-image">
-            <figure class="image is-covered">
+            <figure class="image">
               <img src="images/defabula13.jpeg" alt="">
             </figure>
           </div>
@@ -167,7 +166,7 @@
     
         <div class="card">
           <div class="card-image">
-            <figure class="image is-covered">
+            <figure class="image">
               <img src="images/defabula14.jpeg" alt="">
             </figure>
           </div>
@@ -183,11 +182,12 @@
     
       </div>
     </section>
+    <!-- Carousel end -->
     <section class="section">
       <div class="content">
         <div class="columns">
           <div class="column">
-            <div class="card" data-aos="fade-right">
+            <div class="card">
               <div class="card-image">
                 <figure class="image">
                   <img src="images/defabula01.jpeg" alt="">
@@ -203,7 +203,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="card" data-aos="fade-up">
+            <div class="card">
               <div class="card-image">
                 <figure class="image">
                   <img src="images/defabula08.jpeg" alt="">
@@ -219,7 +219,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="card" data-aos="fade-down">
+            <div class="card">
               <div class="card-image">
                 <figure class="image">
                   <img src="images/defabula10.jpeg" alt="">
@@ -240,24 +240,24 @@
     <section class="section">
       <div class="content">
         <div class="columns">
-          <div class="column is-three-fifths" data-aos="fade-up" >
+          <div class="column is-three-fifths">
             <h3 class="title is-5">Lorem, ipsum dolor.</h3>
             <h3 class="subtitle is-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse in aperiam praesentium!</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia placeat incidunt eius. Atque magni ipsum non temporibus, porro minima omnis est accusamus possimus fuga quod iure quas obcaecati ab explicabo!</p>
           </div>
           <div class="column">
-            <figure class="image" data-aos="fade-down">
+            <figure class="image">
               <img class="is-rounded" src="images/defabula-kids.jpg" alt="">
             </figure>
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            <figure class="image" data-aos="fade-up">
+            <figure class="image">
               <img class="is-rounded" src="images/defabula-scouts.jpg" alt="">
             </figure>
           </div>
-          <div class="column is-three-fifths has-text-right has-text-left-mobile" data-aos="fade-down">
+          <div class="column is-three-fifths has-text-right has-text-left-mobile">
             <h3 class="title is-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
             <h5 class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione odio, soluta doloremque modi atque officiis!</h5>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore doloremque repudiandae placeat excepturi amet quos in provident illo voluptates doloribus, recusandae dolore ipsam nesciunt quidem. Commodi dignissimos debitis exercitationem rem.</p>
@@ -273,7 +273,6 @@
         </p>
       </div>
     </footer>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -301,9 +300,8 @@ if ($navbarBurgers.length > 0) {
 }
 
 });
-  AOS.init();
 
-  bulmaCarousel.attach('#slider1', {
+  bulmaCarousel.attach('.slider', {
     slidesToScroll: 1,
     slidesToShow: 4,
     navigationKeys: true,
