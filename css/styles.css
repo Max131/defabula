@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Neucha");
-@import url("https://fonts.googleapis.com/css?family=Nothing+you+could-do");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap");
 @utf "charset-8";
 @keyframes spinAround {
   from {
@@ -833,7 +833,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-family: "Neucha", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Nothing you could do" !important; }
+  font-family: "Nothing You Could Do", cursive !important; }
 
 .is-family-sans-serif {
   font-family: "Neucha", sans-serif !important; }
@@ -5070,7 +5070,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   font-family: "Neucha", sans-serif !important; }
 
 .is-family-secondary {
-  font-family: "Nothing you could do" !important; }
+  font-family: "Nothing You Could Do", cursive !important; }
 
 .is-family-sans-serif {
   font-family: "Neucha", sans-serif !important; }
