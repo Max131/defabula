@@ -54,6 +54,9 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
+              <a class="navbar-item" href="!#">
+                <img src="images/defabula-logo-circle.jpg">De fábula
+              </a>
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                 <span></span>
                 <span></span>
@@ -61,6 +64,11 @@
               </span>
             </div>
             <div id="navbarMenuHeroA" class="navbar-menu">
+              <div class="navbar-start">
+                <a href="" class="navbar-item"><span class="icon has-text-info"><i class="fab fa-2x fa-facebook"></i></span></a>
+                <a href="" class="navbar-item"><span class="icon has-text-danger"><i class="fab fa-2x fa-instagram"></i></span></a>
+                <a href="" class="navbar-item"><span class="icon has-text-danger"><i class="fab fa-2x fa-youtube"></i></span></a>
+              </div>
               <div class="navbar-end">
                 <a class="navbar-item"><span class="icon"><i class="fas fa-sign-language"></i></span><span>Marionetas</span></a>
                 <a class="navbar-item"><span class="icon"><i class="fas fa-book"></i></span><span>Cuentos</span></a>
@@ -336,10 +344,12 @@ if ($navbarBurgers.length > 0) {
   bulmaCarousel.attach('#slider1', {
     slidesToScroll: 1,
     slidesToShow: 5,
-    navigationKeys: true,
+    // navigationKeys: true,
     loop: true,
     infinite: true,
-    autoplay: true
+    autoplay: true,
+    // duration: 200,
+    autoplaySpeed: 2500
   });
   </script>
   </body>
