@@ -11,29 +11,45 @@
     <style>
       html{scroll-behavior: smooth;}
       .parallax{
-          background-image: 
-          radial-gradient(ellipse at center, transparent, black),
-          url('images/defabula02.jpeg')!important;
+          
           background-size: cover;
           background-position: center;
           background-attachment: fixed;
+      }
+      .parallax-hero{
+        background-image: 
+          radial-gradient(ellipse at center, transparent, black),
+          url('images/defabula02.jpeg')!important;
+      }
+      .parallax-contact{
+        background-image: 
+          radial-gradient(ellipse at center, transparent, black),
+          url('images/paper-plane.jpg')!important;
       }
       img{border: 1px solid black;}
       .card{height: 100%;}
       .navbar-end .navbar-item:nth-child(odd){color:lightcoral;}
       .navbar-end .navbar-item:nth-child(even){color:lightgreen;}
+      .slider .card{padding: .25rem;}
+      .slider img{border:none; }
+      /* body {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-image: radial-gradient(ellipse farthest-corner at 45px 45px , grey 0%, lightyellow 50%, lightgreen 95%);
+      }  */
       @media screen and (min-width: 1024px){
         .navbar-end .navbar-item{font-size: 1.5rem!important;}
         .navbar-end .navbar-item:nth-child(odd){transform: rotate(-10deg);}
         .navbar-end .navbar-item:nth-child(even){transform: rotate(10deg);}
         .navbar-end .navbar-item:hover{
-          transition: all ease .5s; color: tomato!important;
+          transition: all ease .5s; /*color: tomato!important;*/
           border-radius: .25rem;transform: scale(2) translate(-1rem, 1rem);}
       }
     </style>
   </head>
-  <body>
-    <section class="hero is-dark is-bold is-fullheight parallax">
+  <body class="has-background-warning">
+    <section class="hero is-dark is-bold is-fullheight parallax parallax-hero">
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
@@ -66,11 +82,6 @@
           </h2>
         </div>
       </div>
-    
-      <!-- Hero footer: will stick at the bottom -->
-      <div class="hero-foot">
-  
-      </div>
     </section>
     <section class="section">
       <div class="content">
@@ -79,115 +90,120 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio, autem, quisquam corporis culpa architecto deleniti facilis qui perspiciatis voluptatum minus aliquid fuga recusandae molestias unde ipsum? Quae, quia repudiandae.Doloribus maxime officia quo quasi totam neque minus inventore pariatur magnam, dolore at sunt, vel reiciendis voluptatem cumque expedita labore quod iure. Error consequuntur id, dolore minima facilis illo neque.</p>
       </div>
     </section>
+    <!-- Start Carousel -->
     <section class="section">
-
-      <!-- Carousel start -->
-      <div class="slider">
-
-        <div class="card">
-          <div class="card-image">
-            <figure class="image">
-              <img src="images/defabula15.jpeg" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="item__title">
-              Mon titre 1
+      <div class="container">
+        <div class="carousel slider-container" id="slider1">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-covered">
+                <img src="https://loremflickr.com/320/220/kids?radom1" alt="">
+              </figure>
             </div>
-            <div class="item__description">
-              Ici une petite description pour tester le slider
+            <div class="card-content">
+              <div class="item__title">
+                Mon titre 1
+              </div>
+              <div class="item__description">
+                Ici une petite description pour tester le slider
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-covered">
+                <img src="https://loremflickr.com/320/220/kids?radom2" alt="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="item__title">
+                Mon titre 2
+              </div>
+              <div class="item__description">
+                Ici une petite description pour tester le slider
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-covered">
+                <img src="https://loremflickr.com/320/220/kids?radom3" alt="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="item__title">
+                Mon titre 3
+              </div>
+              <div class="item__description">
+                Ici une petite description pour tester le slider
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-covered">
+                <img src="https://loremflickr.com/320/220/kids?radom4" alt="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="item__title">
+                Mon titre 4
+              </div>
+              <div class="item__description">
+                Ici une petite description pour tester le slider
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-covered">
+                <img src="https://loremflickr.com/320/220/kids?radom5" alt="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="item__title">
+                Mon titre 5
+              </div>
+              <div class="item__description">
+                Ici une petite description pour tester le slider
+              </div>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-covered">
+                <img src="https://loremflickr.com/320/220/kids?radom6" alt="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="item__title">
+                Mon titre 6
+              </div>
+              <div class="item__description">
+                Ici une petite description pour tester le slider
+              </div>
             </div>
           </div>
         </div>
-    
-        <div class="card">
-          <div class="card-image">
-            <figure class="image">
-              <img src="images/defabula03.jpeg" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="item__title">
-              Mon titre 2
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le slider
-            </div>
-          </div>
-        </div>
-    
-        <div class="card">
-          <div class="card-image">
-            <figure class="image">
-              <img src="images/defabula12.jpeg" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="item__title">
-              Mon titre 3
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le slider
-            </div>
-          </div>
-        </div>
-    
-        <div class="card">
-          <div class="card-image">
-            <figure class="image">
-              <img src="images/defabula09.jpeg" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="item__title">
-              Mon titre 4
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le slider
-            </div>
-          </div>
-        </div>
-    
-        <div class="card">
-          <div class="card-image">
-            <figure class="image">
-              <img src="images/defabula13.jpeg" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="item__title">
-              Mon titre 5
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le slider
-            </div>
-          </div>
-        </div>
-    
-        <div class="card">
-          <div class="card-image">
-            <figure class="image">
-              <img src="images/defabula14.jpeg" alt="">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="item__title">
-              Mon titre 6
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le slider
-            </div>
-          </div>
-        </div>
-    
       </div>
     </section>
-    <!-- Carousel end -->
+    <!-- End Carousel -->
+    <!-- Start Cards -->
     <section class="section">
       <div class="content">
         <div class="columns">
           <div class="column">
             <div class="card">
+              <div class="card-header is-shadowless">
+                <div class="card-header-title">
+                    <h4>Marionetas</h4>
+                </div>
+              </div>
               <div class="card-image">
                 <figure class="image">
                   <img src="images/defabula01.jpeg" alt="">
@@ -204,6 +220,11 @@
           </div>
           <div class="column">
             <div class="card">
+              <div class="card-header is-shadowless">
+                <div class="card-header-title">
+                    <h4>Cuentacuentos</h4>
+                </div>
+              </div>
               <div class="card-image">
                 <figure class="image">
                   <img src="images/defabula08.jpeg" alt="">
@@ -220,6 +241,11 @@
           </div>
           <div class="column">
             <div class="card">
+              <div class="card-header is-shadowless">
+                <div class="card-header-title">
+                    <h4>Cuentos</h4>
+                </div>
+              </div>
               <div class="card-image">
                 <figure class="image">
                   <img src="images/defabula10.jpeg" alt="">
@@ -237,7 +263,8 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <!-- End Cards -->
+    <!-- <section class="section">
       <div class="content">
         <div class="columns">
           <div class="column is-three-fifths">
@@ -246,14 +273,14 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia placeat incidunt eius. Atque magni ipsum non temporibus, porro minima omnis est accusamus possimus fuga quod iure quas obcaecati ab explicabo!</p>
           </div>
           <div class="column">
-            <figure class="image">
+            <figure class="image is-covered">
               <img class="is-rounded" src="images/defabula-kids.jpg" alt="">
             </figure>
           </div>
         </div>
         <div class="columns">
           <div class="column">
-            <figure class="image">
+            <figure class="image is-covered">
               <img class="is-rounded" src="images/defabula-scouts.jpg" alt="">
             </figure>
           </div>
@@ -265,7 +292,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    <!-- <section class="parallax parallax-contact has-text-white">
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nemo doloribus atque quae excepturi neque reprehenderit unde ipsa porro. Nihil iste qui dolorum ea reprehenderit tenetur saepe eaque cumque quaerat?</p>
+      </div>
+    </section> -->
     <footer class="footer has-background-warning">
       <div class="content has-text-centered">
         <p>
@@ -301,9 +333,9 @@ if ($navbarBurgers.length > 0) {
 
 });
 
-  bulmaCarousel.attach('.slider', {
+  bulmaCarousel.attach('#slider1', {
     slidesToScroll: 1,
-    slidesToShow: 4,
+    slidesToShow: 5,
     navigationKeys: true,
     loop: true,
     infinite: true,
