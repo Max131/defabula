@@ -29,23 +29,18 @@
       .footer-icons a{margin: 0 1rem;}
       img{border: 1px solid black;}
       .card{height: 100%;}
-      .navbar-end .navbar-item:nth-child(odd){color:lightcoral;}
-      .navbar-end .navbar-item:nth-child(even){color:lightgreen;}
+      /* .navbar-start .navbar-item:nth-child(odd){color:lightcoral;} */
+      /* .navbar-start .navbar-item:nth-child(even){color:lightgreen;} */
       .slider .card{padding: .25rem;}
       .slider img{border:none; }
-      /* body {
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        background-image: radial-gradient(ellipse farthest-corner at 45px 45px , grey 0%, lightyellow 50%, lightgreen 95%);
-      }  */
       @media screen and (min-width: 1024px){
-        .navbar-end .navbar-item{font-size: 1.5rem!important;}
-        .navbar-end .navbar-item:nth-child(odd){transform: rotate(-10deg);}
-        .navbar-end .navbar-item:nth-child(even){transform: rotate(10deg);}
-        .navbar-end .navbar-item:hover{
+        .navbar-start .navbar-item{font-size: 1.25rem!important;}
+        /* .navbar-end .navbar-item:nth-child(odd){transform: rotate(-10deg);} */
+        /* .navbar-end .navbar-item:nth-child(even){transform: rotate(10deg);} */
+        .navbar-start .navbar-item:hover{
           transition: all ease .5s; /*color: tomato!important;*/
-          border-radius: .25rem;transform: scale(2) translate(-1rem, 1rem);}
+          border-radius: .25rem;transform: scale(1.25);
+          }
       }
     </style>
   </head>
@@ -56,7 +51,7 @@
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item" href="!#">
-                <img src="images/defabula-logo-circle.jpg">De fábula
+                <!-- <img src="images/defabula-logo-circle.jpg">De fábula -->
               </a>
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                 <span></span>
@@ -66,15 +61,15 @@
             </div>
             <div id="navbarMenuHeroA" class="navbar-menu">
               <div class="navbar-start">
+                <a class="navbar-item has-text-success"><span class="icon"><i class="fas fa-sign-language"></i></span><span>Marionetas</span></a>
+                <a class="navbar-item has-text-warning"><span class="icon"><i class="fas fa-book"></i></span><span>Cuentos</span></a>
+                <a class="navbar-item has-text-info"><span class="icon"><i class="fas fa-school"></i></span><span>En tu escuela</span></a>
+                <a class="navbar-item has-text-grey"><span class="icon"><i class="far fa-envelope-open"></i></span><span>Escribenos</span></a>
+              </div>
+              <div class="navbar-end">
                 <a href="" class="navbar-item"><span class="icon has-text-info"><i class="fab fa-2x fa-facebook"></i></span></a>
                 <a href="" class="navbar-item"><span class="icon has-text-danger"><i class="fab fa-2x fa-instagram"></i></span></a>
                 <a href="" class="navbar-item"><span class="icon has-text-danger"><i class="fab fa-2x fa-youtube"></i></span></a>
-              </div>
-              <div class="navbar-end">
-                <a class="navbar-item"><span class="icon"><i class="fas fa-sign-language"></i></span><span>Marionetas</span></a>
-                <a class="navbar-item"><span class="icon"><i class="fas fa-book"></i></span><span>Cuentos</span></a>
-                <a class="navbar-item"><span class="icon"><i class="fas fa-school"></i></span><span>En tu escuela</span></a>
-                <a class="navbar-item"><span class="icon"><i class="far fa-envelope-open"></i></span><span>Escribenos</span></a>
               </div>
             </div>
           </div>
@@ -210,19 +205,19 @@
             <div class="card">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
-                    <h4>Marionetas</h4>
+                    <h4 class="title is-4">Filipo cuentacuentos</h4>
                 </div>
               </div>
               <div class="card-image">
                 <figure class="image">
-                  <img src="images/defabula01.jpeg" alt="">
+                  <img src="images/defabula15.jpeg" alt="">
                 </figure>
               </div>
               <div class="card-content">
-                <h3 class="title is-5">Lorem, ipsum dolor.</h3>
-                <h4 class="subtitle is-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eligendi.</h4>
+                <h4 class="subtitle is-5">Duración 20 minutos</h4>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eveniet iusto neque nobis. Accusantium voluptas assumenda unde, ducimus vero ullam! Voluptate, quos consectetur. Libero, repellat deserunt harum perspiciatis sapiente tenetur aliquam, tempore saepe labore cupiditate laudantium sit exercitationem! Distinctio accusantium voluptas itaque numquam vero accusamus eos rerum ea a magni?
+                  Dinámica de narrativa donde los cuentos son dirigidos por "Filipo", una marioneta que invita a 
+                  descrubir la magia de la lectura y la imaginación dentro del salón de clases. 
                 </p>
               </div>
             </div>
@@ -231,7 +226,7 @@
             <div class="card">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
-                    <h4>Cuentacuentos</h4>
+                    <h4 class="title is-4">El palabrejero</h4>
                 </div>
               </div>
               <div class="card-image">
@@ -240,10 +235,10 @@
                 </figure>
               </div>
               <div class="card-content">
-                <h3 class="title is-5">Lorem, ipsum dolor.</h3>
-                <h4 class="subtitle is-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eligendi.</h4>
+                <h4 class="subtitle is-5">Duración 45 minutos</h4>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eveniet iusto neque nobis. Accusantium voluptas assumenda unde, ducimus vero ullam! Voluptate, quos consectetur. Libero, repellat deserunt harum perspiciatis sapiente tenetur aliquam, tempore saepe labore cupiditate laudantium sit exercitationem! Distinctio accusantium voluptas itaque numquam vero accusamus eos rerum ea a magni?
+                  Espectáculo de narrativa con la mezcla de música, clown y teatro, para llevar de una manera divertida 
+                  y expresa, un taller que fomente la literatura y sus derivados
                 </p>
               </div>
             </div>
@@ -252,7 +247,7 @@
             <div class="card">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
-                    <h4>Cuentos</h4>
+                    <h4 class="title is-4">Cuentos con marionetas</h4>
                 </div>
               </div>
               <div class="card-image">
@@ -261,10 +256,10 @@
                 </figure>
               </div>
               <div class="card-content">
-                <h3 class="title is-5">Lorem, ipsum dolor.</h3>
-                <h4 class="subtitle is-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eligendi.</h4>
+                <h4 class="subtitle is-5">Duracióm 45 minutos</h4>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia eveniet iusto neque nobis. Accusantium voluptas assumenda unde, ducimus vero ullam! Voluptate, quos consectetur. Libero, repellat deserunt harum perspiciatis sapiente tenetur aliquam, tempore saepe labore cupiditate laudantium sit exercitationem! Distinctio accusantium voluptas itaque numquam vero accusamus eos rerum ea a magni?
+                  Espectáculo de títeres y narrativa con la mezcla de música, clown y teatro que nos 
+                  transporta a un espacio libre para la imaginación. 
                 </p>
               </div>
             </div>
