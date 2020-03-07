@@ -4,5 +4,6 @@
 De Fábula is a wonderful project about puppets, tales and reading for kids at
 their schools.
 
+![Puppeter](https://max131.github.io/defabula/images/defabula02.jpeg)
+
 Maded with [Bulma CSS](https://bulma.io/)
-![Puppeter](https://max131.github.io/defabula/images/titiritero.jpg)
