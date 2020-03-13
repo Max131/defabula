@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>De Fábula - Marionetas, Cuentos y Aventuras.</title>
+    <title>Defábula - Marionetas, Cuentos y Aventuras.</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <link rel="icon" type="image/png" href="images/defabula-logo-circle-small.png">
@@ -21,12 +21,17 @@
           radial-gradient(ellipse at center, transparent, black),
           url('images/defabula02.jpeg')!important;
       }
-      .footer-icons a{margin: 0 1rem;}
+      footer a{margin: 0 1rem;}
       .card{height: 100%;}
-      @media screen and (min-width: 1024px){
-        .navbar-start .navbar-item{font-size: 1.25rem!important;}
-        .navbar-start .navbar-item:hover{
-          transition: all ease .5s;border-radius: .25rem;transform: scale(1.25);}
+      .animated-chevron{
+        animation-name: moreinfo;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        }
+      @keyframes moreinfo{
+        0% {transform: translateY(0px);}
+        50% {transform: translateY(-20px);}
       }
     </style>
     <!-- Open Graph meta -->
@@ -71,15 +76,15 @@
 }
 </script>
   </head>
-  <body class="has-background-warning">
+  <body class="has-background-danger has-text-white">
     <section class="hero is-dark is-bold is-fullheight parallax parallax-hero">
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item" href="!#">
-                <!-- <img src="images/defabula-logo-circle.jpg">De fábula -->
-              </a>
+              <!-- <a class="navbar-item" href="!#">
+                <img src="images/defabula-logo-circle.jpg">De fábula
+              </a> -->
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                 <span></span>
                 <span></span>
@@ -87,16 +92,16 @@
               </span>
             </div>
             <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-start">
+              <!-- <div class="navbar-start">
                 <a class="navbar-item has-text-success"><span class="icon"><i class="fas fa-sign-language"></i></span><span>Marionetas</span></a>
                 <a class="navbar-item has-text-warning"><span class="icon"><i class="fas fa-book"></i></span><span>Cuentos</span></a>
                 <a class="navbar-item has-text-info"><span class="icon"><i class="fas fa-school"></i></span><span>En tu escuela</span></a>
                 <a class="navbar-item has-text-grey"><span class="icon"><i class="far fa-envelope-open"></i></span><span>Escribenos</span></a>
-              </div>
+              </div> -->
               <div class="navbar-end">
-                <a href="" class="navbar-item"><span class="icon has-text-info"><i class="fab fa-2x fa-facebook"></i></span></a>
-                <a href="" class="navbar-item"><span class="icon has-text-danger"><i class="fab fa-2x fa-instagram"></i></span></a>
-                <a href="" class="navbar-item"><span class="icon has-text-danger"><i class="fab fa-2x fa-youtube"></i></span></a>
+                <a href="" class="navbar-item"><span class="icon has-text-white"><i class="fab fa-2x fa-instagram"></i></span></a>
+                <a href="" class="navbar-item"><span class="icon has-text-white"><i class="fab fa-2x fa-facebook"></i></span></a>
+                <a href="" class="navbar-item"><span class="icon has-text-white"><i class="fab fa-2x fa-youtube"></i></span></a>
               </div>
             </div>
           </div>
@@ -105,24 +110,31 @@
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title is-italic is-2 is-size-3-mobile is-family-secondary has-text-weight-light">
-            De Fábula
+          <h1 class="title is-italic is-2 is-size-3-mobile is-family-secondary has-text-weight-bold">
+            Defábula
           </h1>
-          <h2 class="subtitle is-italic is-3 is-size-5-mobile is-family-secondary">
-            Marionetas, cuentos, aventuras y más...
+          <h2 class="subtitle is-italic is-3 is-size-5-mobile is-family-secondary has-text-weight-bold">
+            Cuentos con marionetas.
           </h2>
         </div>
       </div>
+      <div class="hero-footer has-text-centered">
+          <a href="#main" class="has-text-white"><span class="icon animated-chevron"><i class="fas fa-angle-down fa-3x"></i></span></a>
+      </div>
     </section>
-    <section class="section">
+    <section class="section" id="main">
       <div class="content">
-        <h2 class="title is-2 has-text-centered is-family-secondary">Cuentos de fábula</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat vitae dicta numquam fugiat perspiciatis aliquam laborum distinctio, ipsum impedit. Officia soluta beatae voluptate ratione sit, quae blanditiis quidem perspiciatis culpa!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio, autem, quisquam corporis culpa architecto deleniti facilis qui perspiciatis voluptatum minus aliquid fuga recusandae molestias unde ipsum? Quae, quia repudiandae.Doloribus maxime officia quo quasi totam neque minus inventore pariatur magnam, dolore at sunt, vel reiciendis voluptatem cumque expedita labore quod iure. Error consequuntur id, dolore minima facilis illo neque.</p>
+        <div class="tags is-centered">
+          <span class="tag is-white is-large">Cuentacuentos</span>
+          <span class="tag is-white is-large">Teatro & clown</span>
+          <span class="tag is-white is-large">Música</span>
+          <span class="tag is-white is-large">Sala de lectura</span>
+          <span class="tag is-white is-large">Marionetas en tu escuela</span>
+        </div>
       </div>
     </section>
     <!-- Start Carousel -->
-    <section class="carousel slider-container" id="slider1">
+    <section class="carousel slider-container has-text-grey" id="slider1">
       <div class="card">
         <div class="card-image">
           <figure class="image is-covered is-3by2">
@@ -145,14 +157,6 @@
             <img src="images/defabula-shows07.jpg" alt="">
           </figure>
         </div>
-        <!-- <div class="card-content">
-          <div class="item__title">
-            Mon titre 2
-          </div>
-          <div class="item__description">
-            Ici une petite description pour tester le slider
-          </div>
-        </div> -->
       </div>
   
       <div class="card">
@@ -161,14 +165,6 @@
             <img src="images/defabula-shows03.jpeg" alt="">
           </figure>
         </div>
-        <!-- <div class="card-content">
-          <div class="item__title">
-            Mon titre 3
-          </div>
-          <div class="item__description">
-            Ici une petite description pour tester le slider
-          </div>
-        </div> -->
       </div>
   
       <div class="card">
@@ -177,14 +173,6 @@
             <img src="images/defabula-shows04.jpeg" alt="">
           </figure>
         </div>
-        <!-- <div class="card-content">
-          <div class="item__title">
-            Mon titre 4
-          </div>
-          <div class="item__description">
-            Ici une petite description pour tester le slider
-          </div>
-        </div> -->
       </div>
   
       <div class="card">
@@ -193,14 +181,6 @@
             <img src="images/defabula-shows05.jpeg" alt="">
           </figure>
         </div>
-        <!-- <div class="card-content">
-          <div class="item__title">
-            Mon titre 5
-          </div>
-          <div class="item__description">
-            Ici une petite description pour tester le slider
-          </div>
-        </div> -->
       </div>
   
       <div class="card">
@@ -209,14 +189,6 @@
             <img src="images/defabula-shows06.jpeg" alt="">
           </figure>
         </div>
-        <!-- <div class="card-content">
-          <div class="item__title">
-            Mon titre 6
-          </div>
-          <div class="item__description">
-            Ici une petite description pour tester le slider
-          </div>
-        </div> -->
       </div>
 
       <div class="card">
@@ -225,14 +197,6 @@
             <img src="images/defabula-shows08.jpg" alt="">
           </figure>
         </div>
-        <!-- <div class="card-content">
-          <div class="item__title">
-            Mon titre 6
-          </div>
-          <div class="item__description">
-            Ici une petite description pour tester le slider
-          </div>
-        </div> -->
       </div>
     </section>
     <!-- End Carousel -->
@@ -244,7 +208,6 @@
             <div class="card">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
-                    <h4 class="title is-4">Filipo cuentacuentos</h4>
                 </div>
               </div>
               <div class="card-image">
@@ -252,9 +215,9 @@
                   <img src="images/defabula15.jpeg" alt="">
                 </figure>
               </div>
-              <div class="card-content">
-                <h4 class="subtitle is-5">Duración 20 minutos</h4>
-                <p>
+              <div class="card-content content is-medium">
+                <h4 class="subtitle is-5">Filipo cuentacuentos</h4>
+                <p class="">
                   Dinámica de narrativa donde los cuentos son dirigidos por "Filipo", una marioneta que invita a 
                   descrubir la magia de la lectura y la imaginación dentro del salón de clases. 
                 </p>
@@ -265,7 +228,6 @@
             <div class="card">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
-                    <h4 class="title is-4">El palabrejero</h4>
                 </div>
               </div>
               <div class="card-image">
@@ -273,8 +235,8 @@
                   <img src="images/defabula08.jpeg" alt="">
                 </figure>
               </div>
-              <div class="card-content">
-                <h4 class="subtitle is-5">Duración 45 minutos</h4>
+              <div class="card-content content is-medium">
+                <h4 class="subtitle is-5">El palabrejero</h4>
                 <p>
                   Espectáculo de narrativa con la mezcla de música, clown y teatro, para llevar de una manera divertida 
                   y expresa, un taller que fomente la literatura y sus derivados
@@ -286,7 +248,6 @@
             <div class="card">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
-                    <h4 class="title is-4">Cuentos con marionetas</h4>
                 </div>
               </div>
               <div class="card-image">
@@ -294,8 +255,8 @@
                   <img src="images/defabula10.jpeg" alt="">
                 </figure>
               </div>
-              <div class="card-content">
-                <h4 class="subtitle is-5">Duracióm 45 minutos</h4>
+              <div class="card-content content is-medium">
+                <h4 class="subtitle is-5">Cuentos con marionetas</h4>
                 <p>
                   Espectáculo de títeres y narrativa con la mezcla de música, clown y teatro que nos 
                   transporta a un espacio libre para la imaginación. 
@@ -307,89 +268,42 @@
       </div>
     </section>
     <!-- End Cards -->
-    <!-- <section class="section">
-      <div class="content">
-        <div class="columns">
-          <div class="column is-three-fifths">
-            <h3 class="title is-5">Lorem, ipsum dolor.</h3>
-            <h3 class="subtitle is-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse in aperiam praesentium!</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia placeat incidunt eius. Atque magni ipsum non temporibus, porro minima omnis est accusamus possimus fuga quod iure quas obcaecati ab explicabo!</p>
-          </div>
-          <div class="column">
-            <figure class="image is-covered">
-              <img class="is-rounded" src="images/defabula-kids.jpg" alt="">
-            </figure>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column">
-            <figure class="image is-covered">
-              <img class="is-rounded" src="images/defabula-scouts.jpg" alt="">
-            </figure>
-          </div>
-          <div class="column is-three-fifths has-text-right has-text-left-mobile">
-            <h3 class="title is-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <h5 class="subtitle is-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione odio, soluta doloremque modi atque officiis!</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore doloremque repudiandae placeat excepturi amet quos in provident illo voluptates doloribus, recusandae dolore ipsam nesciunt quidem. Commodi dignissimos debitis exercitationem rem.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat, accusantium esse sequi, enim fugit officiis, sit earum aut ipsum impedit aspernatur inventore? Velit corrupti deleniti exercitationem nihil saepe amet.Illum quasi sint optio cumque numquam veniam quibusdam aperiam accusantium necessitatibus, a voluptates aspernatur in officia, recusandae iusto voluptate esse nam! Nam blanditiis ullam cum atque tempore vitae suscipit deserunt?</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- <section class="parallax parallax-contact has-text-white">
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nemo doloribus atque quae excepturi neque reprehenderit unde ipsa porro. Nihil iste qui dolorum ea reprehenderit tenetur saepe eaque cumque quaerat?</p>
-      </div>
-    </section> -->
-    <footer class="footer has-background-warning">
+    <footer class="footer has-background-danger">
       <div class="content has-text-centered">
         <p class="footer-icons">
-          <a href=""><span class="icon has-text-info"><i class="fab fa-3x fa-facebook"></i></span></a>
-          <a href=""><span class="icon has-text-danger"><i class="fab fa-3x fa-instagram"></i></span></a>
-          <a href=""><span class="icon has-text-danger"><i class="fab fa-3x fa-youtube"></i></span></a>
+          <a href=""><span class="icon has-text-white"><i class="fab fa-3x fa-instagram"></i></span></a>
+          <a href=""><span class="icon has-text-white"><i class="fab fa-3x fa-facebook"></i></span></a>
+          <a href=""><span class="icon has-text-white"><i class="fab fa-3x fa-youtube"></i></span></a>
         </p>
         <p>
-          <strong>De Fábula 2020&copy;</strong> por <a href="https://thinkonline.xyz">Think Online!</a>. Desarrollado con <a href="https://bulma.io">Bulma</a>
+          <strong>De Fábula 2020&copy;</strong> por<a href="https://thinkonline.xyz">Think Online!</a>Desarrollado con<a href="https://bulma.io">Bulma</a>
         </p>
       </div>
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-// Get all "navbar-burger" elements
+document.addEventListener('DOMContentLoaded', () => {
 const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-// Check if there are any navbar burgers
 if ($navbarBurgers.length > 0) {
-
-  // Add a click event on each of them
   $navbarBurgers.forEach( el => {
     el.addEventListener('click', () => {
-
-      // Get the target from the "data-target" attribute
       const target = el.dataset.target;
       const $target = document.getElementById(target);
-
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
       el.classList.toggle('is-active');
       $target.classList.toggle('is-active');
-
     });
   });
 }
-
 });
 
   bulmaCarousel.attach('#slider1', {
     slidesToScroll: 1,
     slidesToShow: 5,
-    // navigationKeys: true,
     loop: true,
     infinite: true,
     autoplay: true,
-    // duration: 200,
-    autoplaySpeed: 2500
+    autoplaySpeed: 2500,
+    pagination: false
   });
   </script>
   </body>
