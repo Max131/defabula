@@ -20,12 +20,14 @@
           url('images/defabula02.jpeg')!important;
       }
 
-      .parallax-frame{
+      body{
         background-image: 
-          url('images/theater.jpg')!important;
+          url('images/theater.jpg');
           background-position: center bottom;
           min-height: 50vh;
+          background-attachment: fixed;
       }
+      .parallax-frame{border-top: 10px solid black;}
       .parallax-frame img{margin-bottom: 4rem;}
       .services span{margin: 0 .75rem;}
       footer a{margin: 0 1rem;}
@@ -37,6 +39,7 @@
       @keyframes jump{
         50% {transform: translateY(-20px);}
       }
+      .footer{background-color: transparent;}
     </style>
     <!-- Open Graph meta -->
   <meta property="og:type"               content="business.business" />
@@ -80,7 +83,7 @@
 }
 </script>
   </head>
-  <body class="has-background-danger has-text-white">
+  <body class="has-text-white">
     <section class="hero is-dark is-bold is-fullheight parallax-hero">
       <div class="hero-head">
         <nav class="navbar">
@@ -274,7 +277,7 @@
       </div>
     </section>
     <!-- End Cards -->
-    <footer class="footer has-background-danger">
+    <footer class="footer">
       <div class="content has-text-centered">
         <p class="footer-icons">
           <a href=""><span class="icon has-text-white"><i class="fab fa-3x fa-instagram"></i></span></a>
