@@ -7,6 +7,7 @@
     <title>DeFábula - Marionetas, Cuentos y Aventuras.</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="icon" type="image/png" href="images/defabula-logo-circle-small.png">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
@@ -113,7 +114,7 @@
       </div>
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
-        <div class="container has-text-centered">
+        <div class="container has-text-centered" data-aos="zoom-in" data-aos-duration="800">
           <h1 class="title is-italic is-2 is-size-3-mobile is-family-secondary has-text-weight-bold">
             DeFábula
           </h1>
@@ -125,10 +126,10 @@
       </div>
     </section>
     <section class="section parallax-frame has-text-centered" id="main">
-      <figure class="">
+      <figure data-aos="slide-up" data-aos-duration="1000">
         <img src="images/defabula-logo-rect.png" alt="Defábula logo">
       </figure>
-      <div class="content is-medium">
+      <div class="content is-medium" data-aos="zoom-in" data-aos="1000">
         <div class="services">
           <span>Cuentacuentos</span> 
           <span>En tu escuela</span> 
@@ -214,7 +215,7 @@
       <div class="content">
         <div class="columns">
           <div class="column">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
                 </div>
@@ -234,7 +235,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="1500">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
                 </div>
@@ -254,7 +255,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1500">
               <div class="card-header is-shadowless">
                 <div class="card-header-title">
                 </div>
@@ -290,6 +291,7 @@
       </div>
     </footer>
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
 document.addEventListener('DOMContentLoaded', () => {
 const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -314,6 +316,7 @@ if ($navbarBurgers.length > 0) {
     autoplaySpeed: 2500,
     pagination: false
   });
+  AOS.init();
   </script>
   </body>
 </html>
