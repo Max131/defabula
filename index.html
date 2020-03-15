@@ -11,23 +11,22 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
       html{scroll-behavior: smooth;}
-      .parallax{
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-      }
       .parallax-hero{
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         background-image: 
           radial-gradient(ellipse at center, transparent, black),
           url('images/defabula02.jpeg')!important;
       }
 
-      /* .parallax-frame{
+      .parallax-frame{
         background-image: 
-          url('images/defabulaframe.png')!important;
+          url('images/theater.jpg')!important;
           background-position: center top;
-          padding-top: 70vh;
-      } */
+          min-height: 50vh;
+      }
+      .parallax-frame img{margin-bottom: 4rem;}
       footer a{margin: 0 1rem;}
       .card{height: 100%;}
       .animated-chevron{
@@ -83,14 +82,11 @@
 </script>
   </head>
   <body class="has-background-danger has-text-white">
-    <section class="hero is-dark is-bold is-fullheight parallax parallax-hero">
+    <section class="hero is-dark is-bold is-fullheight parallax-hero">
       <div class="hero-head">
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <!-- <a class="navbar-item" href="!#">
-                <img src="images/defabula-logo-circle.jpg">De fábula
-              </a> -->
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                 <span></span>
                 <span></span>
@@ -126,11 +122,13 @@
         </div>
       </div>
     </section>
-    <section class="section" id="main">
-      <figure class="image"><img src="images/frame.png" alt=""></figure>
+    <section class="section parallax-frame has-text-centered" id="main">
+      <figure class="">
+        <img src="images/defabula-logo-rect.png" alt="Defábula logo">
+      </figure>
       <div class="content">
         <!-- <figure class="image"><img src="images/defabulaframe.png" alt=""></figure> -->
-        <div class="tags is-centered is-sr-only">
+        <div class="tags is-centered">
           <span class="tag is-white is-large">Cuentacuentos</span>
           <span class="tag is-white is-large">Teatro & clown</span>
           <span class="tag is-white is-large">Música</span>

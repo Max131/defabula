@@ -34,7 +34,7 @@
    id="namedview444"
    showgrid="false"
    inkscape:zoom="0.87152855"
-   inkscape:cx="336.16765"
+   inkscape:cx="110.12801"
    inkscape:cy="569.22969"
    inkscape:window-x="0"
    inkscape:window-y="0"
@@ -947,27 +947,30 @@
    style="stroke:none;fill:#ffffff"
    inkscape:export-xdpi="90.040001"
    inkscape:export-ydpi="90.040001"><text
-     x="89.6521"
-     y="56.516186"
-     class="fil4 str4 fnt0"
-     id="text403"
-     style="font-weight:normal;font-size:12.00549984px;font-family:'Century Gothic';fill:#ffffff;stroke:none;stroke-width:0.0762">Cuentacuentos</text>
+   x="89.6521"
+   y="56.516186"
+   class="fil4 str4 fnt0"
+   id="text403"
+   style="font-weight:normal;font-size:12.00549984px;font-family:'Century Gothic';fill:#ffffff;stroke:none;stroke-width:0.0762">Cuentacuentos</text>
+
 <text
-     x="78.023102"
-     y="93.743591"
-     class="fil4 str4 fnt1"
-     id="text405"
-     style="font-weight:normal;font-size:10.88609982px;font-family:'Book Antiqua';fill:#ffffff;stroke:none;stroke-width:0.0762">Teatro y clown</text>
+   x="78.023102"
+   y="93.743591"
+   class="fil4 str4 fnt1"
+   id="text405"
+   style="font-weight:normal;font-size:10.88609982px;font-family:'Book Antiqua';fill:#ffffff;stroke:none;stroke-width:0.0762">Teatro y clown</text>
+
 <text
-     x="170.31799"
-     y="93.743591"
-     class="fil4 fnt2"
-     id="text407"
-     style="font-weight:normal;font-size:11.80060005px;font-family:'Maiandra GD';fill:#ffffff;stroke:none">Música</text>
+   x="170.31799"
+   y="93.743591"
+   class="fil4 fnt2"
+   id="text407"
+   style="font-weight:normal;font-size:11.80060005px;font-family:'Maiandra GD';fill:#ffffff;stroke:none">Música</text>
+
 <g
-     transform="matrix(0.924926,0,0,1,-95.1705,5.7935854)"
-     id="g431"
-     style="stroke:none;fill:#ffffff">
+   transform="matrix(0.924926,0,0,1,-95.1705,5.7935854)"
+   id="g431"
+   style="stroke:none;fill:#ffffff">
    
    
    
@@ -992,30 +995,35 @@
      id="tspan5237"
      sodipodi:role="line">En tu escuela</tspan></text>
 
+
 </g><text
-     x="168.472"
-     y="113.08159"
-     class="fil4 fnt4"
-     id="text433"
-     style="font-weight:normal;font-size:13.12520027px;font-family:'Arial Rounded MT Bold';fill:#ffffff;stroke:none">En tu fiesta</text>
+   x="168.472"
+   y="113.08159"
+   class="fil4 fnt4"
+   id="text433"
+   style="font-weight:normal;font-size:13.12520027px;font-family:'Arial Rounded MT Bold';fill:#ffffff;stroke:none">En tu fiesta</text>
+
 <text
-     x="128.298"
-     y="73.743591"
-     class="fil4 fnt5"
-     id="text435"
-     style="font-weight:bold;font-size:18.21699905px;font-family:DilleniaUPC;fill:#ffffff;stroke:none">Sala de lectura</text>
+   x="128.298"
+   y="73.743591"
+   class="fil4 fnt5"
+   id="text435"
+   style="font-weight:bold;font-size:18.21699905px;font-family:DilleniaUPC;fill:#ffffff;stroke:none">Sala de lectura</text>
+
 <text
-     x="43.9412"
-     y="76.774086"
-     class="fil4 str4 fnt6"
-     id="text437"
-     style="font-weight:normal;font-size:17.02149963px;font-family:Harrington;fill:#ffffff;stroke:none;stroke-width:0.0762">Títeres</text>
+   x="43.9412"
+   y="76.774086"
+   class="fil4 str4 fnt6"
+   id="text437"
+   style="font-weight:normal;font-size:17.02149963px;font-family:Harrington;fill:#ffffff;stroke:none;stroke-width:0.0762">Títeres</text>
+
 <text
-     x="124.386"
-     y="119.63159"
-     class="fil4 str4 fnt7"
-     id="text439"
-     style="font-weight:normal;font-size:10.12930012px;font-family:'Berlin Sans FB';fill:#ffffff;stroke:none;stroke-width:0.0762">Talleres</text>
+   x="124.386"
+   y="119.63159"
+   class="fil4 str4 fnt7"
+   id="text439"
+   style="font-weight:normal;font-size:10.12930012px;font-family:'Berlin Sans FB';fill:#ffffff;stroke:none;stroke-width:0.0762">Talleres</text>
+
 </g>
 
 <g
