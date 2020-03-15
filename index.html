@@ -13,7 +13,7 @@
       html{scroll-behavior: smooth;}
       .parallax-hero{
         background-size: cover;
-        background-position: center;
+        background-position: center top;
         background-attachment: fixed;
         background-image: 
           radial-gradient(ellipse at center, transparent, black),
@@ -23,19 +23,17 @@
       .parallax-frame{
         background-image: 
           url('images/theater.jpg')!important;
-          background-position: center top;
+          background-position: center bottom;
           min-height: 50vh;
       }
       .parallax-frame img{margin-bottom: 4rem;}
       footer a{margin: 0 1rem;}
       .card{height: 100%;}
-      .animated-chevron{
-        animation-name: moreinfo;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
+      .down-arrow{
+        animation: jump 1.5s infinite;
         animation-timing-function: ease-out;
         }
-      @keyframes moreinfo{
+      @keyframes jump{
         50% {transform: translateY(-20px);}
       }
     </style>
@@ -118,7 +116,7 @@
           <h2 class="subtitle is-italic is-3 is-size-5-mobile is-family-secondary has-text-weight-bold">
             Cuentos con marionetas.
           </h2>
-          <a href="#main" class="has-text-white"><span class="icon animated-chevron"><i class="fas fa-angle-down fa-3x"></i></span></a>
+          <a href="#main" class="has-text-white"><span class="icon down-arrow"><i class="fas fa-angle-down fa-3x"></i></span></a>
         </div>
       </div>
     </section>
